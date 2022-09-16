@@ -12,7 +12,9 @@ export class Integer extends Token {
 
 export class String extends Token {
 }
+export class LeftBracket extends Token{
 
+}
 export class Float extends Token {
 
 }

@@ -1,4 +1,4 @@
-import {Float, Literal, Token} from "./token";
+import {Float, Integer, Literal, Token} from "./token";
 
 const idPreReg = /[a-zA-Z_$]/;
 const idNumReg = /\d/;
@@ -29,9 +29,14 @@ export class Lex {
                         text += str[i];
                     }
                     tokens.push(new Float(text));
+                } else {
+                    tokens.push(new Integer(text));
                 }
-
             }
+
+
+
+
 
             i++;
         }
