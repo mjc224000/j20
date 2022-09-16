@@ -2,7 +2,7 @@ import {Float, Integer, Literal, Token} from "./token";
 
 const idPreReg = /[a-zA-Z_$]/;
 const idNumReg = /\d/;
-
+//http://www.craftinginterpreters.com/
 export class Lex {
     tokens: [] = []
 
